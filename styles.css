@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather&family=Montserrat&family=Sacramento&display=swap");
+
+:root {
+  --background-color: #eae6f6;
+  --primary-color: #1e1e64;
+  --text-color: #7c7c94;
+  --underline-color: #ca3185;
+  --white-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  width: 940px;
+  margin: auto;
+  background-color: var(--white-color);
+  min-height: 550px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.landing {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 90px 10px 40px;
+  font-weight: 400;
+}
+
+.landing-header {
+  font-size: 20px;
+}
+
+.landing h2 {
+  margin-bottom: 90px;
+}
+
+.landing-logo {
+  padding: 2px 10px 2px 4px;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.form {
+  padding: 50px 150px 10px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  width: 50%;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.form-control label {
+  display: block;
+  color: #393e46;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  font-family: inherit;
+  transition: all 0.5s;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.form-control span {
+  visibility: hidden;
+}
+
+.form-control.error span {
+  color: red;
+  visibility: visible;
+}
+
+.form-control.error input {
+  border: 1px solid red;
+}
+
+.form-control.success input {
+  border: 1px solid green;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--white-color);
+  border: none;
+  margin-top: 10px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.form small {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 4px;
+}

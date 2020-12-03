@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="landing">
+        <h2><span class="landing-logo">b.</span>boardme</h2>
+        <h3 class="landing-header">
+          Implement user onboarding experiences with just a few clicks
+        </h3>
+        <p class="landing-text">
+          Guide your customers on a fantastic journey within your web app
+        </p>
+      </div>
+      <form id="form" class="form">
+        <h2>Create your account</h2>
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter a name" />
+          <span>Error message</span>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter an email" />
+          <span>Error message</span>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter a password" />
+          <span>Error message</span>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <span>Error message</span>
+        </div>
+        <button class="btn">Sign up</button>
+        <small>Having problem?<a href="#">Get help</a></small>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
